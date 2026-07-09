@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="288.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tempcon.calculator.FXMLController">
+    <children>
+      <GridPane focusTraversable="true" layoutX="3.0" layoutY="137.0" prefHeight="274.0" prefWidth="282.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="49.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="0" textAlignment="RIGHT" textFill="#7f7f7f" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="equals" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="105.0" prefWidth="71.0" style="-fx-background-color: #1a1a1a;" text="=" textAlignment="CENTER" textFill="#7f7f7f" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="decimal" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="48.0" prefWidth="70.0" style="-fx-background-color: #1a1a1a;" text="." textFill="#7f7f7f" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="one" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="55.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="1" textFill="#7f7f7f" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="two" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="55.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="2" textFill="#7f7f7f" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="three" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="55.0" prefWidth="70.0" style="-fx-background-color: #1a1a1a;" text="3" textFill="#7f7f7f" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="add" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="56.0" prefWidth="76.0" style="-fx-background-color: #1a1a1a;" text="+" textFill="#7f7f7f" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="six" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="56.0" prefWidth="70.0" style="-fx-background-color: #1a1a1a;" text="6" textFill="#7f7f7f" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="five" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="56.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="5" textFill="#7f7f7f" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="four" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="56.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="4" textFill="#7f7f7f" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="54.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="7" textFill="#7f7f7f" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="backspace" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="53.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backspace_grey_192x192.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="signchange" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="53.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="+/-" textFill="#7f7f7f" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="div" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="53.0" prefWidth="70.0" style="-fx-background-color: #1a1a1a;" text="/" textFill="#7f7f7f" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="mul" layoutX="39.0" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="53.0" prefWidth="72.0" style="-fx-background-color: #1a1a1a;" text="*" textFill="#7f7f7f" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="104.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="8" textFill="#7f7f7f" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="subs" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="54.0" prefWidth="72.0" style="-fx-background-color: #1a1a1a;" text="-" textFill="#7f7f7f" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="54.0" prefWidth="70.0" style="-fx-background-color: #1a1a1a;" text="9" textFill="#7f7f7f" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="percentage" mnemonicParsing="false" onAction="#calculator" onMouseClicked="#mclick" onMouseMoved="#mmoved" prefHeight="48.0" prefWidth="69.0" style="-fx-background-color: #1a1a1a;" text="\%" textFill="#7f7f7f" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Button fx:id="clear" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#calculator" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #1a1a1a;" text="C" textFill="#0ea4ed" />
+      <Label fx:id="fdigits" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="53.0" layoutY="72.0" opacity="0.16" prefHeight="63.0" prefWidth="232.0" style="-fx-background-color: grey;" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="foperation" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="3.0" layoutY="5.0" opacity="0.17" prefHeight="63.0" prefWidth="282.0" style="-fx-background-color: grey;" textFill="#0ea4ed">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
