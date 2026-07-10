@@ -8,3 +8,6 @@ HOW TO OPEN
 3. click the file MainApp.java and click run and debug
 4. type mvn javafx: run and enter
 5. go to ports and open port 6080 for NoVNC in a browser and click connect to use the app in a virtual desktop
+
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/sakibsaroar/Calculator)
