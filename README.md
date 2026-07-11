@@ -1,6 +1,7 @@
+
 This is a multi display realistic animated ui calculator app 
 Completely made with JAVA, MAVEN, CSS
-
+<img width="480" height="598" alt="ezgif-6f7558e37eca2a54" src="https://github.com/user-attachments/assets/2f733158-6a16-49c7-8dc0-85a3a0adb4c8" />
 HOW TO OPEN
 
 1. Open this repository in github codespace
